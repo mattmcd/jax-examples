@@ -11,3 +11,14 @@ top level repo root containing a scripts folder and a src folder.
 This repo is mainly intended for my own reference and learning of JAX and related 
 libraries.  While I hope it is useful to others there may be some quirks related to my 
 IT setup, in particular related to getting things working on a Mac M1 laptop.
+
+
+## Setup
+Package management is done with uv.  For the datasets we want to use tensorflow-datasets 
+as it is used by many deep learning examples.  However, the tensorflow ecosystem can be 
+a bit fiddly to use on Apple Silicon and/or python 3.10. 
+
+Installing tensorflow-datasets:
+* specify `protobuf==3.20.3` in pyproject.toml 
+* `uv add tensorflow-datasets` 
+* `uv add tensorflow`
