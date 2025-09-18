@@ -27,3 +27,6 @@ plt.show()
 # %%
 df_m[['train_accuracy', 'test_accuracy']].plot()
 plt.show()
+
+# %%
+model.save('mnist_cnn_nnx.keras')

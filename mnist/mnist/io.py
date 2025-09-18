@@ -4,7 +4,7 @@ import tensorflow_datasets as tfds
 
 
 def load_mnist():
-    mnist = keras.datasets.mnist.load_data()
+    # mnist = keras.datasets.mnist.load_data()
     # Load the data and split it between train and test sets
     (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
 

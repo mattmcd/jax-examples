@@ -102,8 +102,8 @@ def fit(model, optimizer, metrics, train_ds, test_ds):
 
 
 class ModelTrainer:
-    def __init__(self, model, optimizer, metrics, train_ds, test_ds):
-        self.model = model
+    def __init__(self, model : CNN, optimizer, metrics, train_ds, test_ds):
+        self.model : CNN = model
         self.optimizer = optimizer
         self.metrics = metrics
         self.train_ds = train_ds
